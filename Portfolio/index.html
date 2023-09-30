@@ -19,23 +19,23 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <header class="header">
-      <nav class="navbar position-fixed">
-        <a href="#" class="nav-logo">My Portfolio</a>
+      <nav class="navbar">
+        <a href="#" class="nav-logo active">MY PORTFOLIO</a>
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#mySelf" class="nav-link">MySelf</a>
+            <a href="#mySelf" class="nav-link active" active>MYSELF</a>
           </li>
           <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link">PROJECTS</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Blog</a>
+            <a href="#blog" class="nav-link">BLOG</a>
           </li>
           <li class="nav-item">
-            <a href="#Certificate" class="nav-link">Certificates</a>
+            <a href="#Certificate" class="nav-link">CERTIFICATES</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -49,26 +49,32 @@
 
     <div class="container dividercontainer" id="mySelf">
       <div class="row">
+        <div class="col-lg-1 d-flex flex-column"></div>
         <div
-          class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"
+          class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start imgLogo"
         ></div>
-        <div class="col-lg-8 d-flex flex-column align-items-stretch">
-          <div
-            class="content ps-lg-4 d-flex flex-column justify-content-center myselfsecdiv"
-          >
-            <p class="about">
-              I'm Thu Rein Oo, founder of EchTit and a cybersecurity student.On
-              YouTube, I share tech insights, and my Medium blog serves as my
-              portfolio.Passionate about cybersecurity, I aim to contribute and
-              build a tech-savvy community.
-            </p>
-          </div>
+        <div
+          class="col-lg-6 d-flex flex-column justify-content-center myselfsecdi"
+        >
+          <p class="header-title">THU REIN OO</p>
+          <p class="about">
+            I'm Thu Rein Oo, founder of EchTit and a cybersecurity student.On
+            YouTube, I share tech insights, and my Medium blog serves as my
+            portfolio.Passionate about cybersecurity, I aim to contribute and
+            build a tech-savvy community.<br />
+
+            <a href="" download=".pdf" class="mt-auto btn btn-dark"
+              >Download Resume</a
+            >
+          </p>
         </div>
+        <div class="col-lg-1 d-flex flex-column"></div>
       </div>
     </div>
 
     <!-- Project section -->
-    <div class="container dividercontainer">
+    <div class="container dividercontainer" id="projects">
+      <p class="header-title">MY PROJECTS</p>
       <div class="card">
         <div class="row">
           <div class="col-md-3">
@@ -80,7 +86,7 @@
           </div>
           <div class="col-md-9">
             <div class="card-block px-6">
-              <h4 class="card-title">Port Scanner with Python</h4>
+              <h4 class="card-title">PORT SCANNER WITH PYTHON</h4>
               <p class="card-text">
                 Taking a deep dive into the world of Python tools, watch as we
                 navigate the art of coding with a focus on port scanning.
@@ -107,7 +113,7 @@
           </div>
           <div class="col-md-9">
             <div class="card-block px-6">
-              <h4 class="card-title">Rental Service with C# Language</h4>
+              <h4 class="card-title">RENTAL SERVICE WITH C# LANGUAGE</h4>
               <p class="card-text">
                 Business Overview: Nwet Rental offers diverse mini home
                 electronic device rentals. Rental Process: Customers log in,
