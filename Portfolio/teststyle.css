@@ -24,6 +24,11 @@
     color: rgb(0, 78, 123);
     text-align: center;
 }
+.header-title1{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 78, 123);
+}
 .sub-title{
     font-size: 15px;
     color: rgb(0, 78, 123);
@@ -78,6 +83,7 @@ a {
     justify-content: space-between;
     align-items: center;
     margin-right: 2rem;
+    margin-bottom: 0;
 }
 
 .nav-item {
@@ -91,13 +97,13 @@ a {
 }
 
 .nav-link.active {
-    color: yellow;
+    color: rgb(0, 78, 123);
   }
 
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
-    color: yellow;
+    color: rgb(0, 78, 123);
     margin-left: 2rem;
 }
 
@@ -128,7 +134,7 @@ a {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: yellow;
+  color: rgb(0, 78, 123);
 }
 
 @media only screen and (max-width: 768px) {
@@ -176,7 +182,7 @@ a {
 }
 
 .dividercontainer {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 /* My Self Section */
 .image {
@@ -195,7 +201,8 @@ a {
     /* border-radius: 20rem 0rem 30rem 25rem; */
     /* border-radius: 0rem 8rem 0rem 8rem; */
     /* padding: 3rem 8rem 3rem 8rem; */
-    padding: 2rem 4rem 2rem 4rem;
+    /* padding: 2rem 4rem 2rem 4rem; */
+    padding: 1rem 1rem 1rem 1rem;
     font-size: 1rem;
     font-style: italic;
   }

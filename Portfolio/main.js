@@ -15,40 +15,38 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+const navLinks = document.querySelectorAll(".nav-link");
 
-// Function to determine if an element is in the viewport
-function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
+  /// Function to determine if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
     return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      rect.bottom >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight)
     );
   }
   
-  // Function to update the active link
+  // Function to update active link based on the section in view
   function updateActiveLink() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    
     navLinks.forEach((link) => {
-      const sectionId = link.getAttribute('href').substring(1);
+      const sectionId = link.getAttribute("href").substring(1);
       const section = document.getElementById(sectionId);
-      
-      if (section && isElementInViewport(section)) {
-        link.classList.add('active');
+  
+      if (isInViewport(section)) {
+        link.classList.add("active");
       } else {
-        link.classList.remove('active');
+        link.classList.remove("active");
       }
     });
   }
   
   // Add a scroll event listener to update active link on scroll
-  window.addEventListener('scroll', updateActiveLink);
+  window.addEventListener("scroll", updateActiveLink);
   
   // Call the function initially to set the correct active link on page load
   updateActiveLink();
   
+
 
 
   
