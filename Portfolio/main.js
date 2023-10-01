@@ -45,6 +45,10 @@ function isInViewport(element) {
   
   // Call the function initially to set the correct active link on page load
   updateActiveLink();
+
+
+
+  
   
 
 
