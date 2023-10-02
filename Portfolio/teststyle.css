@@ -188,7 +188,7 @@ a {
 }
 /* My Self Section */
 .image {
-    background: url("./Img/FB_IMG_1650033841206-removebg.png") center center no-repeat;
+    background: url("./Img/FB_IMG_1650033841206-removebg.png"),linear-gradient(to bottom, #e5ecec, #ffffff) center center no-repeat;
     background-size: cover;
     min-height: 350px;
     min-width: 300px;
