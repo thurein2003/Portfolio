@@ -190,9 +190,17 @@ a {
 .image {
     background: url("./Img/FB_IMG_1650033841206-removebg.png") center center no-repeat;
     background-size: cover;
-    min-height: 400px;
+    min-height: 350px;
+    min-width: 300px;
     border-radius:0% 0% 0% 75%;
   }
+  .imgLogo {
+    border-radius: 50%;
+    background-color: #e5ecec;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px rgba(242, 241, 241, 0.1); /* Add a shadow */
+  }
+  
 
 .myselfsecdiv {
     padding-top: 12rem;
