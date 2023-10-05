@@ -507,8 +507,67 @@ padding-bottom: 50px;
 }
 
 
-/* Contact */
+/* Education */
 
+
+/* Add your CSS variables here if needed */
+.bullets {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px;
+    overflow: auto;
+    padding: 0;
+}
+
+.bullet {
+    flex: 1 1 320px;
+    margin: 16px;
+    box-sizing: border-box;
+}
+
+.bullet-icon {
+    background: #000;
+    border-radius: 50%;
+    float: left;
+    height: 56px;
+    padding: 14px;
+    width: 56px;
+}
+
+.bullet-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.bullet-icon-1 {
+    background: #e5ecec;
+}
+
+.bullet-content {
+    margin-left: 78px; /* Adjust as needed */
+    margin-bottom: 32px;
+}
+.bullet-header-text{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 78, 123);
+    text-align: start;
+}
+
+.university-image {
+    background: url("./Img/University.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 200px;
+  }
+  .university-image1 {
+    background: url("./Img/university1.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 200px;
+  }
+  .university-div{
+    background-color: #e5ecec;
+    min-height: 400px;
+  }
 
   
 
