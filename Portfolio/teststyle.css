@@ -192,13 +192,13 @@ a {
     background-size: cover;
     min-height: 350px;
     min-width: 300px;
-    border-radius:0% 0% 0% 75%;
+    border-radius:50%;
   }
   .imgLogo {
-    border-radius: 50%;
-    background-color: #e5ecec;
+    /* border-radius: 50%;
+    background-color: #e5ecec; */
     margin-top: 50px;
-    box-shadow: 0px 0px 10px rgba(242, 241, 241, 0.1); /* Add a shadow */
+    /* box-shadow: 0px 0px 10px rgba(242, 241, 241, 0.1);  */
   }
   
 
@@ -237,7 +237,7 @@ padding-bottom: 50px;
     align-items: center;
 }
 .share-img{
-    width: 250px;
+    width: 300px;
     height: 150px;
     border-radius: 10px;
     background-color: #e5ecec;
