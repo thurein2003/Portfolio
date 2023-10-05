@@ -588,8 +588,41 @@ padding-bottom: 50px;
     padding-right: 20px;
   }
 
+  .footer-container{
+    background-color: rgb(26, 27, 26);
+    min-height: 100px;
+  }
 
-
+  .copyright{
+    font-size: 20px;
+    color: #8abfbe;
+  }
+  .footer-img1{
+    background: url("./Img/facebookpage.png") center center no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+  }
+  .footer-img2{
+    background: url("./Img/youtubepage.png") center center no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+  }
+  .footer-a-text{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+  }
+  .footer-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  .footer-hr{
+    border: 1px solid white;
+  }
 
 
 
