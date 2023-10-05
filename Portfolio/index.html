@@ -133,7 +133,7 @@
           ></div>
         </div>
 
-       <div class="container container-color">
+       <div class="container container-color"  style="min-height: 500px;">
         <div class="row dividercontainer">
           <div class="col-lg-1 d-flex flex-column align-items-stretch"></div>
           <div
@@ -442,35 +442,64 @@
 
 <!-- Contact Section -->
 
-<div class="container dividercontainer" id="contact">
-  <p class="header-title">CONTACT ME!</p>
-  <div class="row">
-    <div
-    class="col-lg-4 d-flex flex-column justify-content-center justify-content-lg-start"
-  >
-  <form id="contact-form" action="process_form.php" method="POST">
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
+<div class="container dividercontainer" id="contact" >
+  <p class="header-title">CONTACT ME</p>
+  <div class="row container-color" style="min-height: 400px;">
+    <div class="col-lg-8 d-flex flex-column align-items-stretch mail-box">
+      <div class="row">
+        <div class="col-lg-4 d-flex flex-column align-items-stretch">
+          <input type="text" placeholder="Your Name" class="contact-input">
+        </div>
+        <div class="col-lg-4 d-flex flex-column align-items-stretch">
+          <input type="email" placeholder="Your Mail" class="contact-input">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 d-flex flex-column align-items-stretch">
+          <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message" class="contact-input"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column align-items-stretch">
+        </div>
+        <div class="col-lg-2 d-flex flex-column align-items-stretch">
+          <a
+          class="mt-auto btn btn-dark"
+          href="https://github.com/thurein2003/Port_scanner_with_python.git"
+          >Send</a
+        >
+        </div>
+      </div>
     </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-    </div>
-    <div class="form-group">
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-    </div>
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-    </div>
-    <div class="form-group">
-        <button type="submit">Send</button>
-    </div>
-</form>
 
+    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-stretch dividercontainer">
+      <p class="bullet-header-text">SOCIAL MEDIA</p>
+      <div class="row">
+        <p class="card-text">Follow My Social Media</p>
+        <div>
+            <a href="" class="address">
+                <img src="./Img/facebook.svg" alt="facebook" style="width: 40px;height: 40px;"/>
+            </a>
+            <a href="tel:+959982284320" class="facebook">
+                <img src="./Img/youtube.svg" alt="youtube" style="width: 50px;height: 50px;"/>
+            </a>
+            <a href="" class="instagram">
+                <img src="./Img/linkedin.svg" alt="linkin" style="width: 50px;height: 50px;"/>
+            </a>
+        </div>
+      </div>
+      <div class="row dividercontainer">
+          <p class="card-text">Call Now <img src="./Img/phone-calling.svg" alt="Phonecall" style="width: 20px;height: 20px;"/>
+            <img src="./Img/phone-calling.svg" alt="Phonecall" style="width: 20px;height: 20px;"/></p>
+      </div>
+      <div class="row dividercontainer">
+       <p class="bullet-header-text">  <a href="tel:+959956696618" class="phone"> <img src="./Img/smartphone.svg" alt="Phone" style="width: 50px;height: 50px;"/></a> <a href="tel:+959956696618" class="phone"> +959956696618 </a></p>
+      </div>
   </div>
+  
+     
+  </div>
+  
   </div>
 </div>
 </div>
