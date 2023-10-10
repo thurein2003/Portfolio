@@ -184,15 +184,26 @@ a {
 }
 
 .dividercontainer {
-    padding-top: 30px;
+    padding-top: 80px;
+}
+.footerdivider{
+    padding-bottom: 80px;
 }
 /* My Self Section */
+h1, .h1{
+    font-size: 50px;
+    margin: 0;
+    line-height: 1.2em;
+    font-weight: 700;
+    font-family: 'Jost', sans-serif;
+    padding-bottom: 30px;
+}
 .image {
-    background: url("./Img/FB_IMG_1650033841206-removebg.png"),linear-gradient(to bottom, #e5ecec, #ffffff) center center no-repeat;
+    background: url("./Img/thureinoo.jpg");
     background-size: cover;
     min-height: 350px;
     min-width: 300px;
-    border-radius:50%;
+    /* border-radius:5%; */
   }
   .imgLogo {
     /* border-radius: 50%;
@@ -229,18 +240,23 @@ padding-bottom: 50px;
     width: 150px;
     height: 100px;
     border-radius: 10px;
-    background-color: #e5ecec;
+    background-color: rgb(0, 78, 123);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.goal-text{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
 .share-img{
     width: 300px;
     height: 150px;
     border-radius: 10px;
-    background-color: #e5ecec;
+    background-color: rgb(0, 78, 123);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -569,8 +585,17 @@ padding-bottom: 50px;
     min-height: 400px;
   }
 
+  /* services */
 
-  /* Contact */
+  .service-grid-item {
+    padding: 50px 30px;
+    border: 1px solid rgb(0, 78, 123);
+    border-radius: 6px;
+    transition: all .3s;
+}
+
+
+  /* footer */
 
   .contact-input{
     width: 100%;
@@ -591,11 +616,13 @@ padding-bottom: 50px;
   .footer-container{
     background-color: rgb(26, 27, 26);
     min-height: 100px;
+    padding-top: 30px;
   }
 
   .copyright{
     font-size: 12px;
     color: #8abfbe;
+    padding-top: 20px;
   }
   .footer-img1{
     background: url("./Img/facebookpage.png") center center no-repeat;
@@ -611,18 +638,20 @@ padding-bottom: 50px;
   }
   .footer-a-text{
     font-size: 12px;
-    color: white;
+    color:  #868687;
     text-align: center;
   }
   .footer-title{
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 78, 123);
     text-align: center;
   }
   .footer-hr{
     border: 1px solid white;
   }
-
+  .social-media-container{
+    text-align: center;
+  }
 
 
