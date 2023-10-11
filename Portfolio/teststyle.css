@@ -199,11 +199,11 @@ h1, .h1{
     padding-bottom: 30px;
 }
 .image {
-    background: url("./Img/thureinoo.jpg");
+    background: url("./Img/thureinoo-removebg-preview.png");
     background-size: cover;
     min-height: 350px;
     min-width: 300px;
-    /* border-radius:5%; */
+    /* border-radius:10rem 4rem 12rem 4rem; */
   }
   .imgLogo {
     /* border-radius: 50%;
@@ -219,7 +219,7 @@ h1, .h1{
 .about {
     background-color: rgb(0, 78, 123);
     color: white;
-    /* border-radius: 20rem 0rem 30rem 25rem; */
+    border-radius: 2rem 0rem 3rem 2rem;
     /* border-radius: 0rem 8rem 0rem 8rem; */
     /* padding: 3rem 8rem 3rem 8rem; */
     /* padding: 2rem 4rem 2rem 4rem; */
@@ -571,12 +571,12 @@ padding-bottom: 50px;
 }
 
 .university-image {
-    background: url("./Img/University.jpg") center center no-repeat;
+    background: url("./Img/sld-logo.png") center center no-repeat;
     background-size: cover;
     min-height: 200px;
   }
   .university-image1 {
-    background: url("./Img/university1.jpg") center center no-repeat;
+    background: url("./Img/twinklelogo.jpg") center center no-repeat;
     background-size: cover;
     min-height: 200px;
   }
