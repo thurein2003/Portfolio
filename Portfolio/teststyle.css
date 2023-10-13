@@ -578,16 +578,16 @@ padding-bottom: 50px;
 .university-image {
     background: url("./Img/sld-logo.png") center center no-repeat;
     background-size: cover;
-    min-height: 200px;
+    min-height: 250px;
   }
   .university-image1 {
     background: url("./Img/twinklelogo.jpg") center center no-repeat;
     background-size: cover;
-    min-height: 200px;
+    min-height: 250px;
   }
   .university-div{
     background-color: #e5ecec;
-    min-height: 400px;
+    min-height: 250px;
   }
 
   /* services */
@@ -644,6 +644,9 @@ padding-bottom: 50px;
     background-color: rgb(26, 27, 26);
     min-height: 100px;
     padding-top: 30px;
+    /* overflow-y: auto; */
+    max-height: 100vh; /* Set a maximum height to the viewport height */
+  overflow: hidden;
   }
 
   .copyright{
