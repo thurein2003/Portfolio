@@ -242,8 +242,8 @@ padding-bottom: 50px;
   
   
 .learn-img{
-    width: 150px;
-    height: 100px;
+    /* width: 180px; */
+    height: 80px;
     border-radius: 10px;
     background-color: rgb(0, 78, 123);
     text-align: center;
@@ -258,8 +258,8 @@ padding-bottom: 50px;
     font-weight: bold;
 }
 .share-img{
-    width: 300px;
-    height: 150px;
+    /* width: 180px; */
+    height: 80px;
     border-radius: 10px;
     background-color: rgb(0, 78, 123);
     text-align: center;
@@ -561,7 +561,8 @@ padding-bottom: 50px;
 }
 
 .bullet-icon-1 {
-    background: rgb(0, 78, 123);
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .bullet-content {
@@ -574,7 +575,11 @@ padding-bottom: 50px;
     color: rgb(0, 78, 123);
     text-align: start;
 }
-
+.unversity{
+    background: url("./Img/university-img.svg") center center no-repeat;
+    background-size: contain;
+    min-height: 400px;
+}
 .university-image {
     background: url("./Img/sld-logo.png") center center no-repeat;
     background-size: cover;
@@ -642,10 +647,8 @@ padding-bottom: 50px;
 
   .footer-container{
     background-color: rgb(26, 27, 26);
-    min-height: 100px;
+    min-height: 80px;
     padding-top: 30px;
-    /* overflow-y: auto; */
-    max-height: 100vh; /* Set a maximum height to the viewport height */
   overflow: hidden;
   }
 
