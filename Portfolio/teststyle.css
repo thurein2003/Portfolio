@@ -207,10 +207,10 @@ h1, .h1{
   }
   
   .wrap-img{
-    width: 400px;
-    height: 400px;
+    width: 390px;
+    height: 390px;
     border-radius: 50%;
-    background-color: #ffb727; 
+    background-color: #6488a5; 
   }
   .box1{
     width: 400px;
@@ -219,7 +219,7 @@ h1, .h1{
     margin: 5px;
   }
   .profileimg{
-    width: 400px;
+    width: 550px;
     height: 400px;
   }
   /* Media query for screens up to 768px (tablet) */
@@ -243,7 +243,7 @@ h1, .h1{
     }
   
     .profileimg {
-      width: 300px;
+      width: 420px;
       height: 300px;
     }
   }
