@@ -16,7 +16,7 @@
 .header-title{
     font-size: 20px;
     font-weight: bold;
-    color: rgb(0, 78, 123);
+    color: rgb(255, 242, 0);
     text-align: center;
 }
 .header-title1{
@@ -252,8 +252,8 @@ h1, .h1{
     padding-top: 12rem;
 }
 .about {
-    background-color: rgb(0, 78, 123);
-    color: white;
+    background-color: rgb(255, 230, 0);
+    color: rgb(0, 0, 0);
     border-radius: 2rem 0rem 3rem 2rem;
     padding: 1rem 1rem 1rem 1rem;
     font-size: 1rem;
@@ -294,7 +294,7 @@ padding-bottom: 50px;
 }
 
 .prj-image {
-    background: url("./Img/cyber.gif") center center no-repeat;
+    background: url("./Img/cyber2.gif") center center no-repeat;
     background-size: cover;
     min-height: 400px;
   }
@@ -352,7 +352,7 @@ padding-bottom: 50px;
 }
 .card-text{
     font-size: 15px;
-    color: #868687;
+    color: #ffffff;
 }
 .skill-title-text{
     font-size: 15px;
