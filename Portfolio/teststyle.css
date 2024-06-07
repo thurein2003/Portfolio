@@ -300,12 +300,12 @@ padding-bottom: 50px;
   }
 
   .youtubepage-image {
-    background: url("./Img/youtubepage.png") center center no-repeat;
+    background: url("./Img/YoutubePage.jpg") center center no-repeat;
     background-size: cover;
     min-height: 200px;
   }
   .facebookpage-image {
-    background: url("./Img/facebookpage.png") center center no-repeat;
+    background: url("./Img/Facebookpage2.jpg") center center no-repeat;
     background-size: cover;
     min-height: 200px;
   }
