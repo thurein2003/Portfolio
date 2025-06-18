@@ -1330,13 +1330,13 @@ BEM:  Bloque - Elemento - Modificador
   overflow: hidden;
 }
 .profile-card-header.youtube-header {
-  background: url('/Portfolio/Img/YoutubePage2.png') center center/cover no-repeat, rgba(16, 22, 36, 0.7);
+  background: url('./Img/YoutubePage2.png') center center/cover no-repeat, rgba(16, 22, 36, 0.7);
 }
 .profile-card-header.facebook-header {
-  background: url('/Portfolio/Img/Facebookpage2.png') center center/cover no-repeat, rgba(16, 22, 36, 0.7);
+  background: url('./Img/Facebookpage2.png') center center/cover no-repeat, rgba(16, 22, 36, 0.7);
 }
 .profile-card-header.medium-header {
-  background: url('/Portfolio/Img/Medium2.png') center center/cover no-repeat, rgba(16, 22, 36, 0.7);
+  background: url('./Img/Medium2.png') center center/cover no-repeat, rgba(16, 22, 36, 0.7);
 }
 .profile-avatar {
   width: 80px;
