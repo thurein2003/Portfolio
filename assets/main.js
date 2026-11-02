@@ -27,6 +27,137 @@ window.matchMedia("(min-width: 651px)").addEventListener("change", (event) => {
   if (event.matches) closeMenu();
 });
 
+// A manual gallery: visitors control the pace, including with touch or a keyboard.
+document.querySelectorAll("[data-credential-gallery]").forEach((gallery) => {
+  const stage = gallery.querySelector(".credential-stage");
+  const slides = [...gallery.querySelectorAll(".credential-slide")];
+  const browse = gallery.querySelector("select");
+  const count = gallery.querySelector(".gallery-count");
+  const status = gallery.querySelector("[aria-live]");
+  let current = 0;
+  let drag;
+  let suppressClick = false;
+
+  function showSlide(index, announce = true) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      const previous = i === (current - 1 + slides.length) % slides.length;
+      const next = i === (current + 1) % slides.length;
+      slide.classList.toggle("is-current", i === current);
+      slide.classList.toggle("is-previous", previous);
+      slide.classList.toggle("is-next", next);
+      slide.inert = i !== current;
+      slide.setAttribute("aria-hidden", String(i !== current));
+      slide.setAttribute("aria-label", `${i + 1} of ${slides.length}`);
+    });
+    browse.value = String(current);
+    count.textContent = `${String(current + 1).padStart(2, "0")} / ${slides.length}`;
+    if (announce)
+      status.textContent = `${slides[current].dataset.label}. ${current + 1} of ${slides.length}.`;
+  }
+
+  function followHash() {
+    const index = slides.findIndex((slide) => `#${slide.id}` === location.hash);
+    if (index !== -1) showSlide(index);
+  }
+
+  gallery.classList.add("is-enhanced");
+  showSlide(0, false);
+  followHash();
+  window.addEventListener("hashchange", followHash);
+  gallery
+    .querySelector("[data-gallery-prev]")
+    .addEventListener("click", () => showSlide(current - 1));
+  gallery
+    .querySelector("[data-gallery-next]")
+    .addEventListener("click", () => showSlide(current + 1));
+  browse.addEventListener("change", () => showSlide(Number(browse.value)));
+  gallery.addEventListener("keydown", (event) => {
+    if (
+      event.target.closest("select") ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey
+    )
+      return;
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      event.preventDefault();
+      // Leave focus on a stable element when the focused slide becomes inert.
+      if (stage.contains(document.activeElement))
+        stage.focus({ preventScroll: true });
+      showSlide(current + (event.key === "ArrowRight" ? 1 : -1));
+    }
+  });
+
+  stage.addEventListener("pointerdown", (event) => {
+    if (!event.isPrimary || event.button !== 0) return;
+    drag = {
+      id: event.pointerId,
+      x: event.clientX,
+      y: event.clientY,
+      active: false,
+    };
+  });
+  stage.addEventListener("pointermove", (event) => {
+    if (!drag || drag.id !== event.pointerId) return;
+    const dx = event.clientX - drag.x;
+    const dy = event.clientY - drag.y;
+    if (
+      !drag.active &&
+      Math.abs(dx) > 12 &&
+      Math.abs(dx) > Math.abs(dy) * 1.3
+    ) {
+      drag.active = true;
+      stage.setPointerCapture(event.pointerId);
+      stage.classList.add("is-dragging");
+    }
+    if (drag.active) {
+      stage.style.setProperty(
+        "--drag-offset",
+        `${Math.max(-75, Math.min(75, dx * 0.35))}px`,
+      );
+    }
+  });
+  function finishDrag(event) {
+    if (!drag || drag.id !== event.pointerId) return;
+    if (drag.active) {
+      const dx = event.clientX - drag.x;
+      if (event.type === "pointerup" && Math.abs(dx) > 50)
+        showSlide(current + (dx < 0 ? 1 : -1));
+      suppressClick = true;
+      window.setTimeout(() => {
+        suppressClick = false;
+      }, 300);
+    }
+    if (stage.hasPointerCapture(event.pointerId))
+      stage.releasePointerCapture(event.pointerId);
+    stage.classList.remove("is-dragging");
+    stage.style.removeProperty("--drag-offset");
+    drag = undefined;
+  }
+  stage.addEventListener("pointerup", finishDrag);
+  stage.addEventListener("pointercancel", finishDrag);
+  stage.addEventListener("lostpointercapture", (event) => {
+    // Touch starts with implicit capture on the image. Its handoff to the
+    // stage must not cancel the horizontal gesture in progress.
+    if (event.target !== stage) return;
+    stage.classList.remove("is-dragging");
+    stage.style.removeProperty("--drag-offset");
+    drag = undefined;
+  });
+  stage.addEventListener("dragstart", (event) => event.preventDefault());
+  stage.addEventListener(
+    "click",
+    (event) => {
+      if (suppressClick) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+      }
+    },
+    true,
+  );
+});
+
 const dialog = document.querySelector(".certificate-dialog");
 let certificateTrigger;
 document.querySelectorAll("[data-certificate]").forEach((button) => {
