@@ -1,6 +1,12 @@
 {
-  "dependencies": {
-    "bootstrap": "^5.3.1",
-    "build": "^0.1.4"
+  "name": "thu-rein-oo-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Thu Rein Oo's personal portfolio — security, code, and curiosity.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && node scripts/serve.mjs",
+    "check": "node --check assets/main.js && node --check scripts/build.mjs && node --check scripts/serve.mjs && node scripts/check.mjs"
   }
 }

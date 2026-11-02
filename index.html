@@ -1,736 +1,693 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ThuReinOo.EchTit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f5ef" />
+    <meta
+      name="description"
+      content="Thu Rein Oo — exploring digital forensics, building useful software, and sharing what I learn through Ech Tit."
+    />
+    <meta
+      property="og:title"
+      content="Thu Rein Oo — Security, code & curiosity"
+    />
+    <meta
+      property="og:description"
+      content="A personal collection of security projects, forensic investigations, and learning notes."
+    />
+    <meta property="og:type" content="website" />
+    <title>Thu Rein Oo — Security, code & curiosity</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
+      rel="preload"
+      href="./assets/fonts/dm-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="preload"
+      href="./assets/fonts/instrument-serif-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
-    <link rel="stylesheet" href="./Portfolio/teststyle.css" />
-    <link rel="shortcut icon" href="./Portfolio/Img/white_version_logo-removebg-preview.png" type="image/png">
-
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./assets/main.js" defer></script>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <header class="header">
-      <nav class="navbar">
-        <a href="#" class="nav-logo active">MY PORTFOLIO</a>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="#mySelf" class="nav-link active">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a href="#blog" class="nav-link">Videos</a>
-          </li>
-          <li class="nav-item">
-            <a href="#channelSection" class="nav-link">Social</a>
-          </li>
-           <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
-           <li class="nav-item">
-            <a href="#article" class="nav-link">Articles</a>
-          </li>
-           <li class="nav-item">
-            <a href="#walkthrough" class="nav-link">Walkthrough</a>
-          </li>
-          <li class="nav-item">
-            <a href="#education" class="nav-link">EDUCATION</a>
-          </li>
-          <li class="nav-item">
-            <a href="#certificate" class="nav-link" >Certificate</a>
-          </li>
-         
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar" ></span>
-        </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#home" aria-label="Thu Rein Oo, home"
+        >tr<span>.</span></a
+      >
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#work">Work</a><a href="#notes">Field notes</a
+        ><a href="#about">About</a>
+      </nav>
+      <a class="header-contact" href="#contact"
+        >Let’s talk <span aria-hidden="true">↗</span></a
+      >
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+      <nav
+        class="mobile-nav"
+        id="mobile-nav"
+        aria-label="Mobile navigation"
+        hidden
+      >
+        <a href="#work">Work</a><a href="#notes">Field notes</a
+        ><a href="#about">About</a><a href="#contact">Contact</a>
       </nav>
     </header>
-    <!-- My self section start -->
-    <main>
-    <div class="container dividercontainer" id="mySelf">
-      <div class="row imgLogo">
-        <div class="col-12 col-lg-5 col-md-12 col-sm-12 d-flex align-items-stretch justify-content-center justify-content-lg-start" style="overflow: hidden;">
-          <div class="wrap-img">
-            <div class="box1">
-              <img
-                src="./Portfolio/Img/IMG_2516-removebg-preview.png"
-                alt="my profile photo"
-                class="profileimg rounded-circle"
-              />
-            </div>
-            <div class="wave"></div>
-     <div class="wave"></div>
-     <div class="wave"></div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-2 col-md-12 col-sm-12 d-flex align-items-stretch justify-content-center justify-content-lg-start">
-        </div>
-        <div
-          class="col-12 col-lg-5 col-md-12 col-sm-12 d-flex flex-column justify-content-center"
-        >
-          <h1 class="black-color h1 mt-4 text-muted">SAY ME , <span style="color: rgb(255, 255, 255);">Hello </span><img src="./Portfolio/Img/wave.svg" alt="wave" style="width: 40px;height: 40px;"/> <img src="./Portfolio/Img/wave.svg" alt="wave" style="width: 40px;height: 40px;"/></h1>
-          <p class="about shadow-lg px-4 pt-5">
-            I'm Thu Rein Oo, founder of Echtit and a cybersecurity student at Mae Fah Luang University. I focus on digital forensics, create educational content on YouTube, and share write-ups and research on Medium. Through Echtit, I lead training and projects to empower the next generation of ethical hackers and security researchers.
-<br />
-
-            <a href="https://www.canva.com/design/DAF8ZAXSnJg/d4eoESfmG584wf0UIMWwUA/view?utm_content=DAF8ZAXSnJg&utm_campaign=designshare&utm_medium=link&utm_source=editor" download=".pdf" class="mt-3 btn btn-dark"
-              >Download Resume</a
+    <main id="main">
+      <section class="hero wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="small-dot"></span> THU REIN OO · PERSONAL PORTFOLIO
+          </p>
+          <h1 id="hero-title">
+            A curious mind.<br />A <em>security</em><br />perspective.
+          </h1>
+          <p class="hero-intro">
+            I explore how systems work, how they break,<br
+              class="desktop-break"
+            />
+            and what we can learn from the traces left behind.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work"
+              >Explore my work <span aria-hidden="true">↘</span></a
+            ><a
+              class="text-link"
+              href="https://www.linkedin.com/in/thureinoo2003/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Find me on LinkedIn <span aria-hidden="true">↗</span></a
             >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <span class="photo-index">A LITTLE BEYOND THE SCREEN</span
+            ><img
+              class="portrait"
+              src="./Portfolio/Img/0-02-06-97c06d42d740361788687c0c73508cc95cd0f7328e0932862ecee6192f1525bf_27bb7a43a01.jpg"
+              alt="Thu Rein Oo on a quiet country road"
+              width="1600"
+              height="1200"
+              fetchpriority="high"
+            /><span class="photo-corner" aria-hidden="true">↗</span>
+          </div>
+          <div class="photo-caption">
+            <span>Always learning. Usually exploring.</span
+            ><span class="handwritten">That’s me.</span>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span
+            >CYBERSECURITY &nbsp; / &nbsp; DEVELOPMENT &nbsp; / &nbsp; KNOWLEDGE
+            SHARING</span
+          ><a href="#work"
+            >SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+      <section class="intro-band" aria-label="Introduction">
+        <div class="wrap intro-band-inner">
+          <span class="section-marker">THE COMMON THREAD</span>
+          <p>
+            Investigate carefully.<br />Build something useful.
+            <em>Share the process.</em>
           </p>
-          <p class="card-title " style="padding-top: 20px;">My content</p>
-          <div class="mt-3 d-flex align-items-center justify-content-start" id="blog">
-            <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-            <a href="https://www.facebook.com/echtit1">
-              <img src="./Portfolio/Img/facebook.svg" alt="facebook" class="personal-logo text-center"/>
-            </a>
-            </div>
-          <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-            <a href="https://github.com/thurein2003">
-              <img src="./Portfolio/Img/github.svg" alt="linkin" class="personal-logo text-center"/>
-            </a>
-          </div>
-          <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-            <a href="https://www.linkedin.com/in/thu-rein-oo-088307248/">
-                <img src="./Portfolio/Img/linkedin.svg" alt="linkedin" class="personal-logo text-center" />
-            </a>
+          <span class="asterisk" aria-hidden="true">✳</span>
         </div>
-        
-        <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-            <a href="https://medium.com/@thureinstudent18" >
-              <img src="./Portfolio/Img/medium.svg" alt="medium" class="personal-logo text-center"/>
-            </a>
-          </div>
-          <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-            <a href="https://www.youtube.com/@ThuReinOoTech">
-              <img src="./Portfolio/Img/youtube.svg" alt="youtube" class="personal-logo text-center"/>
-            </a>
-          </div>
-          <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-            <a href="https://thurein2003.github.io/Echtit/">
-              <img src="./Portfolio/Img/white_version_logo-removebg-preview.png" alt="linkin" class="personal-logo text-center"/>
-            </a>
-          </div>
-          <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-            <a href="https://x.com/echtit183">
-              <img src="./Portfolio/Img/twitter1.svg" alt="linkin" class="personal-logo text-center"/>
-            </a>
-          </div>
-      
-          </div>
-      </div>
-    </div>
-
-    <!-- My self section end -->
-
-    <!-- Project section start -->
-    <div class="container dividercontainer" >
-     
-        <div class="row min-vh-100 align-items-center align-content-center">
-          <div class="featured-video">
-          <div class="sample-videos">
-            <p class="header-title">
-              My YouTube Videos
-            </p>
-            <div class="video-grid">
-              <!-- Sample video in the middle of the page -->
-              <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SKqJsup1A2E?si=C5xo6xtvN8pX3KoE" frameborder="0" allowfullscreen></iframe>
-                <p>Disk Volume hiding in windows step by step Tutorial</p> 
-              </div>
-              <div class="video">
-                <div class="video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/F1niOHuMK-Q?si=3HmCa7Y25EMlW5K3" frameborder="0" allowfullscreen></iframe>
-                  <p>How to create a port scanner with python</p>
-              </div>
-              </div>
-              <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/EHM5XsH4sxk?si=-765qZMnZdVHb91r" frameborder="0" allowfullscreen></iframe>            
-                <p>How computer work and Software development life cycle</p>
-              </div>
-              <!-- Additional videos in two rows -->
-              <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/f6PC0USp5MU?si=aBgsi-bB83lYZ_rP" frameborder="0" allowfullscreen></iframe>            
-                <p>Drone Forensics Investigation</p>
-              </div>
-              <div class="video">
-                <iframe width="280" height="157" src="https://www.youtube.com/embed/Aj8Typ4e1a0" frameborder="0" allowfullscreen></iframe>
-                <p>Cs50x Final Project: Google dorking Chrome Extension</p>
-              </div>
-              <div class="video" >
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Vlr5VNlfgKU?si=7pSvVlcDLq08JT80" frameborder="0" allowfullscreen></iframe>            
-                <p  id="channelSection">How to create a table with Microsoft access and most common error in there</p>
-              </div>
-               <div class="video" >
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/-6VFhLq6DhY?si=amudpnDphxA9bnZl" frameborder="0" allowfullscreen></iframe>            
-                <p  id="channelSection">Print NightMare THM Tryyourself Lab1</p>
-              </div>
-                             <div class="video" >
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3DLs6PmRAW4?si=26Uuwmp2pM3B-c2J" frameborder="0" allowfullscreen></iframe>            
-                <p  id="channelSection">Get Started with Vertex AI Studio Walk through
-</p>
-              </div>
-              <!-- Add more video elements as needed -->
-            </div>
-          </div>
-          </div>
-
-
-          
-        </div>
-    <!-- Youtube Section-->
-<div class="container my-5">
-  <div class="header-title">Social Platform</div>
-  <div class="row g-4 justify-content-center">
-    <!-- YouTube Card -->
-    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-      <div class="profile-card">
-        <div class="profile-card-header youtube-header">
-          <a href="https://www.youtube.com/channel/UCqv2D8T19akC-kw3yaZcVow" class="profile-follow-btn" target="_blank">Visit</a>
-        </div>
-        <div class="profile-card-body">
-          <img src="./Portfolio/Img/YoutubePage.jpg" alt="YouTube" class="profile-avatar" />
-          <h5 class="profile-title">Thu Rein Oo Tech</h5>
-          <span class="profile-username">@ThureinooTech</span>
-          <p class="profile-desc">
-            I share my learning notes and answer questions from others on my YouTube channel.
-          </p>
-          <div class="profile-meta">
-            <span>132 Subscribers</span>
-            <span>165 Videos</span>
-          </div>
-          <a href="https://www.youtube.com/channel/UCqv2D8T19akC-kw3yaZcVow" class="profile-link" target="_blank">youtube.com</a>
-        </div>
-      </div>
-    </div>
-    <!-- Facebook Card -->
-    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-      <div class="profile-card">
-        <div class="profile-card-header facebook-header">
-          <a href="https://www.facebook.com/echtit1" class="profile-follow-btn" target="_blank">Visit</a>
-        </div>
-        <div class="profile-card-body">
-          <img src="./Portfolio/Img/echtit.png" alt="Facebook" class="profile-avatar" />
-          <h5 class="profile-title">Ech Tit</h5>
-          <span class="profile-username">@echtit1</span>
-          <p class="profile-desc">
-            I write blogs, share free courses, and post about security, networking, and web development.
-          </p>
-          <div class="profile-meta">
-            <span>624 Likes</span>
-            <span>1.2K Followers</span>
-          </div>
-          <a href="https://www.facebook.com/echtit1" class="profile-link" target="_blank">facebook.com</a>
-        </div>
-      </div>
-    </div>
-    <!-- Medium Card -->
-    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-      <div class="profile-card">
-        <div class="profile-card-header medium-header">
-          <a href="https://medium.com/@echtit" class="profile-follow-btn" target="_blank">Visit</a>
-        </div>
-        <div class="profile-card-body">
-          <img src="./Portfolio/Img/echtit.png" alt="Medium" class="profile-avatar" />
-          <h5 class="profile-title">Ech Tit</h5>
-          <span class="profile-username">@echtit</span>
-          <p class="profile-desc">
-            I share articles about technology, programming, and personal growth on Medium.
-          </p>
-          <div class="profile-meta">
-            <span>Blog</span>
-            <span>Walkthrough</span>
-          </div>
-          <a href="https://medium.com/@echtit" class="profile-link" target="_blank" id="projects">medium.com</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- End of YouTube Section -->
- <div class="container dividercontainer" >
-    <div class="header-title">My Projects</div>
-    <div class="project-card-grid">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <img src="./Portfolio/Img/portscann.jpg" alt="Port Scanner" class="project-card-img" />
-        <div class="project-card-body">
-          <h4 class="project-card-title">PORT SCANNER WITH PYTHON</h4>
-          <p class="project-card-text">
-Dive into Python coding with a focus on port scanning.
-          </p>
-          <a class="project-card-btn" href="https://github.com/thurein2003/Port_scanner_with_python.git" target="_blank">Source Code</a>
-        </div>
-      </div>
-      <!-- Project 2 -->
-      <div class="project-card">
-        <img src="./Portfolio/Img/portScanner.jpg" alt="Rental Service" class="project-card-img" />
-        <div class="project-card-body">
-          <h4 class="project-card-title">RENTAL SERVICE WITH C# LANGUAGE</h4>
-          <p class="project-card-text">
-
-Nwet Rental rents mini devices. Users order online; admins manage inventory.
-          </p>
-          <a class="project-card-btn" href="https://github.com/thurein2003/Rental-service-basic-function.git" target="_blank">Source Code</a>
-        </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="project-card">
-        <img src="./Portfolio/Img/Iptracker.png" alt="IP Tracker" class="project-card-img" />
-        <div class="project-card-body">
-          <h4 class="project-card-title">IP Address Tracker</h4>
-          <p class="project-card-text">
-IP Address Tracker lets users track IPs/URLs via CLI or web.
-          </p>
-          <a class="project-card-btn" href="https://github.com/thurein2003/IP-Tracker" target="_blank">Source Code</a>
-        </div>
-      </div>
-      <!-- Project 4 -->
-      <div class="project-card">
-        <img src="./Portfolio/Img/malwaresample.jpeg" alt="Malware Sample" class="project-card-img" />
-        <div class="project-card-body">
-          <h4 class="project-card-title">Malware Sample</h4>
-          <p class="project-card-text">
-This repo offers an educational .bat file for simple malware creation—great for learning. Dive in and explore!
-          </p>
-          <a class="project-card-btn" href="https://github.com/thurein2003/Malware-Testing" target="_blank">Source Code</a>
-        </div>
-      </div>
-      <!-- Project 5 -->
-      <div class="project-card">
-        <img src="./Portfolio/Img/Dorking.jpg" alt="Google Dorking Chrome Extension" class="project-card-img" />
-        <div class="project-card-body">
-          <h4 class="project-card-title">Google Dorking Chrome Extension</h4>
-          <p class="project-card-text">
-            This tool is created for the cs50x project and still in the process for the daily use.
-          </p>
-          <a class="project-card-btn" href="https://github.com/thurein2003/GoogleDorking-chromeExtension.git" target="_blank" >Source Code</a>
-        </div>
-      </div>
-      <!-- Project 6 -->
-      <div class="project-card">
-        <img src="./Portfolio/Img/2Dgame.png" alt="Google Dorking Chrome Extension" class="project-card-img" />
-        <div class="project-card-body">
-          <h4 class="project-card-title">2D Adventure Game</h4>
-          <p class="project-card-text">
-           I wrote this game using C# and Unity, where players navigate a 2D world, solve puzzles, and defeat enemies.  
-          </p>
-          <a class="project-card-btn" href="https://github.com/thurein2003/Advanture-Game" target="_blank" >Source Code</a>
-        </div>
-      </div>
-      <!-- Project 7 -->
-      <div class="project-card">
-        <img src="./Portfolio/Img/studentManag.png" alt="Google Dorking Chrome Extension" class="project-card-img" />
-        <div class="project-card-body">
-          <h4 class="project-card-title">Student Management System</h4>
-          <p class="project-card-text">
-          This project is Uni project which is using java for more detail read on Github.  
-          </p>
-          <a class="project-card-btn" href="https://github.com/thurein2003/Student-Management-System" target="_blank" id="article">Source Code</a>
-        </div>
-      </div>
-      <!-- Add more project cards as needed -->
-    </div>
-  </div>
-       
-
-
-<div class="section-title text-center mt-5">
-  <p class="header-title">My Articles & Content</p>
-</div>
-
-<div class="container my-5">
-  <div class="row article-main-row">
-    <!-- Main Article Intro -->
-    <div class="col-lg-8 col-md-12 mb-4">
-      <div class="liquid-glass-article">
-        <div class="article-glass-bg">
-          <div class="article-header-row">
-            <div class="article-title-block">
-              <h2 class="article-title">Is 2FA Still Enough in 2025?</h2>
-              <span class="article-category">SECURITY</span>
-              <p class="article-author">By Thu Rein Oo &bull; June 2025</p>
-            </div>
-            <div class="article-graphic">
-              <img src="./Portfolio/Img/2FA.png" alt="DKIM Email Example" />
-            </div>
-          </div>
-          <div class="article-content">
-            <p>
-              We’ve long believed that using two-factor authentication (2FA) was a strong security measure. But now, in 2025, it's time to ask ourselves: <b>Is it still enough?</b>
-            </p>
-            <p>
-              Phishing techniques have evolved significantly. Today’s phishing emails are hard to detect, even for trained users. Attackers are no longer just tricking users — they’re bypassing technical protections we used to trust.
-            </p>
-            <div class="text-center mt-4">
-              <a href="https://www.linkedin.com/pulse/two-factor-authentication-2fa-still-enough-2025-thu-rein-oo-eaduc/?trackingId=4l4MF6TZSHK%2FBaY7R0VELg%3D%3D"
-                 class="btn btn-glass-linkedin"
-                 target="_blank"
-                 rel="noopener">
-                <i class="fab fa-linkedin"></i> Read Full Article on LinkedIn
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Recent Articles Sidebar -->
-    <div class="col-lg-4 col-md-12">
-      <div class="recent-articles-glass">
-        <h4 class="recent-articles-title">Recent articles</h4>
-        <div class="recent-article-list">
-          <!-- Article 1 -->
-            <div>
-              <div class="recent-article-title">Forensic Document Examination (FDE): How to Properly Destroy Sensitive Paper Documents</div>
-              <a href="https://www.linkedin.com/pulse/forensic-document-examination-fde-how-properly-destroy-thu-rein-oo-k6jkc/?trackingId=4l4MF6TZSHK%2FBaY7R0VELg%3D%3D"
-                  class="btn btn-glass-linkedin btn-sm ms-2"
-                  target="_blank"
-                  rel="noopener"
-                  style="padding:2px 10px; font-size:0.85rem; border-radius:12px; vertical-align:middle;">
-                  <i class="fab fa-linkedin"></i> Read on LinkedIn
-                </a>
-            </div>
-          
-          <!-- Article 2 (Sample) -->
-           <div>
-              <div class="recent-article-title">ShortURL Link Awareness – Scam Alert by Echtit</div>
-              <a href="https://www.linkedin.com/posts/thureinoo2003_scamalert-echtit-activity-7321061067919347713-HCR9?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD1FE6gB1cyam5zyi8bs5kSkjTG19xqHdLo"
-                  class="btn btn-glass-linkedin btn-sm ms-2"
-                  target="_blank"
-                  rel="noopener"
-                  style="padding:2px 10px; font-size:0.85rem; border-radius:12px; vertical-align:middle;">
-                  <i class="fab fa-linkedin"></i> Read on LinkedIn
-                </a>
-            </div>
-          <!-- Article 3 (Sample) -->
-           <div>
-              <div class="recent-article-title" >Just about Drone Forensics investigation(MM version)</div>
-              <a href="https://www.facebook.com/share/p/1J1xAfR2mJ/"
-                  class="btn btn-glass-linkedin btn-sm ms-2"
-                  target="_blank"
-                  rel="noopener"
-                  style="padding:2px 10px; font-size:0.85rem; border-radius:12px; vertical-align:middle;">
-                  <i class="fab fa-linkedin" id="walkthrough"></i> Read on Facebook
-                </a>
-            </div>
-          <!-- Add more articles as needed -->
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Walkthrough Section -->
-<div class="section-title text-center mt-5" >
-  <p class="header-title" >Walkthrough </p>
-</div>
-
-<div class="container my-5">
-  <div class="row article-main-row">
-    <!-- Walkthrough Sidebar (now on the left) -->
-    <div class="col-lg-4 col-md-12 order-lg-1 order-2">
-      <div class="recent-articles-glass">
-        <h4 class="recent-articles-title">Walkthrough</h4>
-        <div class="recent-article-list">
-          <!-- Example walkthrough article -->
+      </section>
+      <section
+        class="work-section wrap section-space"
+        id="work"
+        aria-labelledby="work-title"
+      >
+        <div class="section-heading">
           <div>
-            <div class="recent-article-title">The Sticker Shop THM walkthrough THM</div>
-            <a href="https://medium.com/@echtit/the-sticker-shop-thm-walkthrough-8e6a545540b9" class="btn btn-glass-linkedin btn-sm ms-2" target="_blank" rel="noopener"
-               style="padding:2px 10px; font-size:0.85rem; border-radius:12px; vertical-align:middle;">
-              <i class="fab fa-linkedin"></i> Read on Medium
-            </a>
+            <p class="eyebrow">01 / SELECTED WORK</p>
+            <h2 id="work-title">From curiosity <em>to code.</em></h2>
           </div>
-           <div>
-            <div class="recent-article-title">Security Footage Walkthrough THM</div>
-            <a href="https://medium.com/@echtit/security-footage-walk-through-7d8b45dab0d8" class="btn btn-glass-linkedin btn-sm ms-2" target="_blank" rel="noopener"
-               style="padding:2px 10px; font-size:0.85rem; border-radius:12px; vertical-align:middle;">
-              <i class="fab fa-linkedin"></i> Read on Medium
-            </a>
-          </div>
-          <!-- Add more walkthroughs as needed -->
+          <a
+            class="text-link"
+            href="https://github.com/thurein2003"
+            target="_blank"
+            rel="noopener noreferrer"
+            >All repositories <span aria-hidden="true">↗</span></a
+          >
         </div>
-      </div>
-    </div>
-    <!-- Main Article (now on the right) -->
-    <div class="col-lg-8 col-md-12 mb-4 order-lg-2 order-1">
-      <div class="liquid-glass-article">
-        <div class="article-glass-bg">
-          <div class="article-header-row">
-            <div class="article-title-block">
-              <h2 class="article-title">Flare DNS Chess Walkthrough</h2>
-              <span class="article-category">Code analysis</span>
-              <p class="article-author">By Thu Rein Oo &bull; Jun 9 2025</p>
+        <div class="project-grid">
+          <article class="project">
+            <a
+              class="project-art terminal-art"
+              href="https://github.com/thurein2003/SensitiveWordAnalyzer"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View SensitiveWordAnalyzer on GitHub"
+              ><div class="terminal-window">
+                <div class="terminal-top">
+                  <span class="terminal-dots">● ● ●</span
+                  ><span>SensitiveWordAnalyzer</span><span>↗</span>
+                </div>
+                <div class="terminal-body">
+                  <p class="terminal-comment">
+                    # Look closer. Understand the evidence.
+                  </p>
+                  <br />
+                  <p>
+                    <span class="terminal-green">→</span> Defensive static
+                    analysis
+                  </p>
+                  <p>
+                    <span class="terminal-green">→</span> Rule-driven file
+                    triage
+                  </p>
+                  <p>
+                    <span class="terminal-green">→</span> Structured JSON &
+                    SARIF reports
+                  </p>
+                  <br />
+                  <p class="terminal-comment">
+                    Suspicious files. Clearer signals.
+                  </p>
+                </div>
+              </div>
+              <span class="art-label"
+                >SECURITY TOOLING / STATIC ANALYSIS</span
+              ></a
+            >
+            <div class="project-meta">
+              <span class="project-number">01</span>
+              <div>
+                <h3>
+                  <a
+                    href="https://github.com/thurein2003/SensitiveWordAnalyzer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >SensitiveWordAnalyzer <span aria-hidden="true">↗</span></a
+                  >
+                </h3>
+                <p>
+                  Defensive, rule-driven static triage for suspicious files,
+                  with structured JSON and SARIF reporting.
+                </p>
+                <span class="project-tags"
+                  >Security tooling <span>·</span> Static analysis
+                  <span>·</span> File triage</span
+                >
+              </div>
             </div>
-            <div class="article-graphic">
-              <img src="./Portfolio/Img/Chess.webp" alt="DKIM Email Example" />
+          </article>
+          <article class="project">
+            <a
+              class="project-art dork-art"
+              href="https://github.com/thurein2003/Python_Library_of_ThuReinOo"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Python Learning Library on GitHub"
+              ><div class="search-illustration">
+                <span class="search-small"
+                  >THE BEST WAY TO LEARN? BUILD SOMETHING.</span
+                ><span class="search-title"
+                  >A little Python.<br /><em>A lot of possibility.</em></span
+                >
+                <div class="search-bar">
+                  <span aria-hidden="true">&gt;_</span
+                  ><code>print("Hello, possibility.")</code
+                  ><span aria-hidden="true">↵</span>
+                </div>
+                <span class="search-foot"
+                  >12 GUIDED PROJECTS · ENGLISH / MYANMAR / THAI</span
+                >
+              </div></a
+            >
+            <div class="project-meta">
+              <span class="project-number">02</span>
+              <div>
+                <h3>
+                  <a
+                    href="https://github.com/thurein2003/Python_Library_of_ThuReinOo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Python Learning Library
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </h3>
+                <p>
+                  A browser-based way to learn Python through 12 guided
+                  projects, with lessons in English, Myanmar, and Thai.
+                </p>
+                <span class="project-tags"
+                  >Python <span>·</span> Pyodide <span>·</span> Learning by
+                  doing</span
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="more-projects">
+          <a
+            href="https://github.com/ThuRein-110/Applying-Matrix-Operations-to-Detect-Suspicious-Behavior-in-Systems-Python-Based"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="project-number">03</span
+            ><span class="more-project-title">Suspicious Behavior Analysis</span
+            ><span class="more-project-type">Python · Security analytics</span
+            ><span aria-hidden="true">↗</span></a
+          ><a
+            href="https://github.com/ThuRein-110/Echtit"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="project-number">04</span
+            ><span class="more-project-title">Ech Tit</span
+            ><span class="more-project-type"
+              >Cybersecurity education website</span
+            ><span aria-hidden="true">↗</span></a
+          ><a
+            href="https://github.com/ThuRein-110/SecondYearWebDev-Project-MFU-election-"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="project-number">05</span
+            ><span class="more-project-title">MFU Election Project</span
+            ><span class="more-project-type"
+              >Web development · University project</span
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section
+        class="notes-section section-space"
+        id="notes"
+        aria-labelledby="notes-title"
+      >
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / FIELD NOTES</p>
+              <h2 id="notes-title">Learning, <em>out loud.</em></h2>
+            </div>
+            <p class="section-aside">
+              Investigations, walkthroughs, and the<br />occasional question
+              worth asking.
+            </p>
+          </div>
+          <div class="notes-grid">
+            <article class="note-feature">
+              <a
+                class="note-image"
+                href="https://www.linkedin.com/pulse/two-factor-authentication-2fa-still-enough-2025-thu-rein-oo-eaduc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Read Is 2FA Still Enough in 2025 on LinkedIn"
+                ><img
+                  src="./Portfolio/Img/2FA.png"
+                  alt="Email security example from my article on two-factor authentication"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                /><span class="image-label">SECURITY PERSPECTIVES</span></a
+              >
+              <div class="note-details">
+                <span class="eyebrow">LINKEDIN ARTICLE · JUNE 2025</span>
+                <h3>
+                  <a
+                    href="https://www.linkedin.com/pulse/two-factor-authentication-2fa-still-enough-2025-thu-rein-oo-eaduc/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Is two-factor authentication<br />still enough?
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </h3>
+                <p>
+                  A look at phishing and the limits of the protections we rely
+                  on.
+                </p>
+              </div>
+            </article>
+            <div class="note-list">
+              <a
+                class="note-row"
+                href="https://www.linkedin.com/posts/thureinoo2003_forensicscience-activity-7280471884016562177-7PzJ"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="eyebrow">DIGITAL FORENSICS · LINKEDIN</span>
+                <h3>Following the evidence, one lab at a time.</h3>
+                <p>
+                  Notes from source code, network, digital, and mobile forensics
+                  labs.
+                </p>
+                <span class="note-arrow" aria-hidden="true">↗</span></a
+              ><a
+                class="note-row"
+                href="https://medium.com/@echtit/flare-dns-chess-walkthrough-a3030fea4098"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="eyebrow">REVERSE ENGINEERING · MEDIUM</span>
+                <h3>Flare DNS Chess walkthrough</h3>
+                <p>
+                  Working through the challenge and documenting the process.
+                </p>
+                <span class="note-arrow" aria-hidden="true">↗</span></a
+              ><a
+                class="note-row"
+                href="https://www.linkedin.com/pulse/forensic-document-examination-fde-how-properly-destroy-thu-rein-oo-k6jkc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="eyebrow"
+                  >FORENSIC DOCUMENT EXAMINATION · LINKEDIN</span
+                >
+                <h3>What happens to sensitive paper documents?</h3>
+                <p>Thinking about information security beyond the screen.</p>
+                <span class="note-arrow" aria-hidden="true">↗</span></a
+              >
             </div>
           </div>
-          <div class="article-content">
+          <div class="notes-footer">
+            <p>More from the lab:</p>
+            <a
+              href="https://medium.com/@echtit/the-sticker-shop-thm-walkthrough-8e6a545540b9"
+              target="_blank"
+              rel="noopener noreferrer"
+              >The Sticker Shop ↗</a
+            ><a
+              href="https://medium.com/@echtit/security-footage-walk-through-7d8b45dab0d8"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Security Footage ↗</a
+            ><a
+              class="all-notes"
+              href="https://medium.com/@echtit"
+              target="_blank"
+              rel="noopener noreferrer"
+              >All notes on Medium ↗</a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="community-section wrap section-space"
+        aria-labelledby="community-title"
+      >
+        <div class="community-copy">
+          <p class="eyebrow">03 / THE COMMUNITY SIDE</p>
+          <h2 id="community-title">
+            Knowledge gets better<br />when you <em>pass it on.</em>
+          </h2>
+          <p>
+            I started <strong>Ech Tit</strong> to share what I learn about
+            security, networking, and development. It’s where my lab notes
+            become walkthroughs, and the things I figure out become useful to
+            someone else.
+          </p>
+          <a
+            class="text-link"
+            href="https://www.facebook.com/echtit1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Meet Ech Tit <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="video-list">
+          <span class="eyebrow">FROM MY YOUTUBE CHANNEL</span
+          ><a
+            href="https://www.youtube.com/watch?v=f6PC0USp5MU"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="play-icon" aria-hidden="true">▶</span>
+            <div>
+              <h3>Drone forensics investigation</h3>
+              <span>Following the digital trail</span>
+            </div>
+            <span aria-hidden="true">↗</span></a
+          ><a
+            href="https://www.youtube.com/watch?v=F1niOHuMK-Q"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="play-icon" aria-hidden="true">▶</span>
+            <div>
+              <h3>Build a port scanner with Python</h3>
+              <span>From concept to working code</span>
+            </div>
+            <span aria-hidden="true">↗</span></a
+          ><a
+            href="https://www.youtube.com/watch?v=Aj8Typ4e1a0"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="play-icon" aria-hidden="true">▶</span>
+            <div>
+              <h3>My CS50x final project</h3>
+              <span>The Google Dorking extension</span>
+            </div>
+            <span aria-hidden="true">↗</span></a
+          ><a
+            class="channel-link text-link"
+            href="https://www.youtube.com/@ThuReinOoTech"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visit Thu Rein Oo Tech <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section
+        class="about-section section-space"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="wrap">
+          <div class="about-grid">
+            <div class="about-photo">
+              <img
+                src="./Portfolio/Img/lifegallery13.jpeg"
+                alt="My laptops and a work session at a café"
+                width="960"
+                height="1280"
+                loading="lazy"
+              /><span class="about-photo-caption"
+                >A change of scenery. Same curiosity.</span
+              >
+            </div>
+            <div class="about-copy">
+              <p class="eyebrow">04 / A LITTLE ABOUT ME</p>
+              <h2 id="about-title">
+                A work in progress.<br /><em>In the best way.</em>
+              </h2>
+              <p>
+                I’m Thu Rein Oo, a computer engineering student at Mae Fah Luang
+                University and the founder of Ech Tit. My interests sit between
+                digital forensics, cybersecurity, and building software.
+              </p>
+              <p>
+                I like learning by doing: writing a small tool, working through
+                a forensics lab, then explaining what I found. This site is a
+                collection of that work.
+              </p>
+              <div class="education">
+                <div>
+                  <span class="education-icon" aria-hidden="true">↗</span>
+                  <div>
+                    <h3>Mae Fah Luang University</h3>
+                    <p>Computer Engineering</p>
+                  </div>
+                  <span class="education-label">STUDIES</span>
+                </div>
+                <div>
+                  <span class="education-icon" aria-hidden="true">✓</span>
+                  <div>
+                    <h3>Twinkle University · NCC Education</h3>
+                    <p>Level 5 in Computing</p>
+                  </div>
+                  <span class="education-label">COMPLETED</span>
+                </div>
+              </div>
+              <a
+                class="text-link"
+                href="https://www.linkedin.com/in/thureinoo2003/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >My professional profile <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+          <div class="credentials">
+            <div class="credentials-heading">
+              <h3>A few things I’ve learned along the way.</h3>
+              <span>SELECTED COURSEWORK & CREDENTIALS</span>
+            </div>
+            <div class="credential-grid">
+              <button
+                class="credential"
+                data-certificate="./Portfolio/Img/Harvard.jpeg"
+                data-title="CS50x · Harvard University"
+              >
+                <span>CS50x</span><span>Harvard University</span
+                ><span aria-hidden="true">↗</span></button
+              ><button
+                class="credential"
+                data-certificate="./Portfolio/Img/computeruser.png"
+                data-title="Certified Secure Computer User · EC-Council"
+              >
+                <span>Secure Computer User</span><span>EC-Council</span
+                ><span aria-hidden="true">↗</span></button
+              ><button
+                class="credential"
+                data-certificate="./Portfolio/Img/networking.png"
+                data-title="Networking · Cisco Networking Academy"
+              >
+                <span>Networking</span><span>Cisco Networking Academy</span
+                ><span aria-hidden="true">↗</span></button
+              ><button
+                class="credential"
+                data-certificate="./Portfolio/Img/cyberthreat.jpg"
+                data-title="Cyber Threat Intelligence · arcX"
+              >
+                <span>Cyber Threat Intelligence</span><span>arcX</span
+                ><span aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <details class="more-credentials">
+              <summary>
+                More learning & certificates <span aria-hidden="true">+</span>
+              </summary>
+              <div class="credential-grid">
+                <button
+                  class="credential"
+                  data-certificate="./Portfolio/Img/blueteam.png"
+                  data-title="Blue Team Junior Analyst · Security Blue Team"
+                >
+                  <span>Blue Team Junior Analyst</span
+                  ><span>Security Blue Team</span
+                  ><span aria-hidden="true">↗</span></button
+                ><button
+                  class="credential"
+                  data-certificate="./Portfolio/Img/cyber.png"
+                  data-title="Ransomware Uncovered · ICTTF"
+                >
+                  <span>Ransomware Uncovered</span><span>ICTTF</span
+                  ><span aria-hidden="true">↗</span></button
+                ><button
+                  class="credential"
+                  data-certificate="./Portfolio/Img/analytics.png"
+                  data-title="Analytics · Google"
+                >
+                  <span>Analytics</span><span>Google</span
+                  ><span aria-hidden="true">↗</span></button
+                ><button
+                  class="credential"
+                  data-certificate="./Portfolio/Img/Cissp.png"
+                  data-title="CISSP introductory course · SkillUp (course completion)"
+                >
+                  <span>CISSP introductory course</span
+                  ><span>SkillUp · Course completion</span
+                  ><span aria-hidden="true">↗</span></button
+                ><button
+                  class="credential"
+                  data-certificate="./Portfolio/Img/datasecience.png"
+                  data-title="Data science course"
+                >
+                  <span>Data science</span><span>Course completion</span
+                  ><span aria-hidden="true">↗</span></button
+                ><button
+                  class="credential"
+                  data-certificate="./Portfolio/Img/genius.png"
+                  data-title="Network specialist · EnGenius"
+                >
+                  <span>Network specialist</span><span>EnGenius</span
+                  ><span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section
+        class="contact-section wrap section-space"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <p class="eyebrow">05 / KEEP THE CONVERSATION GOING</p>
+        <div class="contact-heading">
+          <h2 id="contact-title">Something on<br />your <em>mind?</em></h2>
+          <a
+            class="contact-circle"
+            href="mailto:thureinstudent18@gmail.com"
+            aria-label="Email Thu Rein Oo"
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="contact-bottom">
+          <div>
             <p>
-              To day I am going to write the walkthrough about the Flare DNS chess CTF</b>
+              A project, a question, or a good security rabbit hole.<br />I’d
+              love to hear about it.
             </p>
-            <p>
-               To look the functions which are using in the file, we can use the command which is default in linux ‘readelf’ To debug getNextMove, I first found the offset of 0x11c1 in the output of readelf above.
-            </p>
-            <div class="text-center mt-4">
-              <a href="https://medium.com/@echtit/flare-dns-chess-walkthrough-a3030fea4098"
-                 class="btn btn-glass-linkedin"
-                 target="_blank"
-                 rel="noopener">
-                <i class="fab fa-linkedin"  id="education"></i> Read Full Article on Medium
-              </a>
-            </div>
+            <a class="email-link" href="mailto:thureinstudent18@gmail.com"
+              >thureinstudent18@gmail.com <span aria-hidden="true">↗</span></a
+            >
           </div>
+          <button class="copy-email" data-email="thureinstudent18@gmail.com">
+            Copy email <span aria-hidden="true">⧉</span>
+          </button>
         </div>
+        <p class="sr-only" id="copy-status" role="status"></p>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <a class="wordmark" href="#home" aria-label="Back to top"
+        >tr<span>.</span></a
+      ><span class="footer-credit"
+        >© <span id="year">2026</span> Thu Rein Oo. Built with curiosity.</span
+      >
+      <nav aria-label="Social links">
+        <a
+          href="https://github.com/thurein2003"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub ↗</a
+        ><a
+          href="https://www.linkedin.com/in/thureinoo2003/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn ↗</a
+        ><a
+          href="https://medium.com/@echtit"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Medium ↗</a
+        ><a
+          href="https://www.youtube.com/@ThuReinOoTech"
+          target="_blank"
+          rel="noopener noreferrer"
+          >YouTube ↗</a
+        >
+      </nav>
+      <a class="back-top" href="#home">Back to top ↑</a>
+    </footer>
+    <dialog class="certificate-dialog" aria-labelledby="certificate-title">
+      <div class="dialog-header">
+        <h2 id="certificate-title">Certificate</h2>
+        <button class="dialog-close" aria-label="Close certificate">
+          Close <span aria-hidden="true">×</span>
+        </button>
       </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<!-- Education Section start -->  
-<section class="container dividercontainer">
-  <div>
-    <p class="header-title">MY EDUCATION</p>
-    <div class="row dividercontainer">
-      <!-- Card 1 -->
-      <div class="col-lg-6 d-flex flex-column align-items-stretch university-div">
-        <div class="edu-glass-card mb-4">
-          <div class="edu-glass-icon">
-            <img src="./Portfolio/Img/degree.svg" alt="Degree Icon">
-          </div>
-          <div class="edu-glass-content">
-            <p class="edu-glass-title">TWINKLE UNIVERSITY</p>
-            <p class="edu-glass-text">
-              I'm Thu Rein Oo, proud to have completed NCC Level 5 in cyber security at Twinkle University. Ready for advanced training and responsibilities.
-            </p>
-            <p class="edu-glass-link">
-              <a href="https://www.twinkleuniversity.com/" target="_blank">Follow my University</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col-lg-6 d-flex flex-column align-items-stretch university-div">
-        <div class="edu-glass-card mb-4">
-          <div class="edu-glass-icon">
-            <img src="./Portfolio/Img/degree.svg" alt="Degree Icon">
-          </div>
-          <div class="edu-glass-content">
-            <p class="edu-glass-title">Mae Fah Luang University</p>
-            <p class="edu-glass-text">
-              I am currently studying computer engineering at Mae Fah Luang University. I look forward to expanding my knowledge and skills in this field and continuing my academic journey.
-            </p>
-            <p class="edu-glass-link">
-              <a href="https://sld-edu.com/" target="_blank" id="certificate">Follow my University</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Education Section end -->
-
-<!-- Certification Section start -->  
-<div class="container dividercontainer footerdivider">
-  <p class="header-title">MY CERTIFICATES & AWARDS</p>
-  <p class="span-text text-center mt-4">Let's Keep Learning</p>
-  <ul class="cert-glass-grid mt-5">
-    <li>
-      <a href="" class="cert-glass-card">
-        <figure>
-          <img class="cert-img" src='./Portfolio/Img/blueteam.png' alt='Blue Team Certificate'>
-          <figcaption class="cert-caption">This's Blue Team Certificate From Google.</figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="" class="cert-glass-card">
-        <figure>
-          <img class="cert-img" src='./Portfolio/Img/computeruser.png' alt='CSCU certificate'>
-          <figcaption class="cert-caption">This's CSCU certificate from EC-council.</figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="" class="cert-glass-card">
-        <figure>
-          <img class="cert-img" src='./Portfolio/Img/cyber.png' alt='Ransomware uncover'>
-          <figcaption class="cert-caption">This's ransomware uncover from ICTTF.</figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="" class="cert-glass-card">
-        <figure>
-          <img class="cert-img" src='./Portfolio/Img/analytics.png' alt='Google analysis'>
-          <figcaption class="cert-caption">This's google analysis from Google.</figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="" class="cert-glass-card">
-        <figure>
-          <img class="cert-img" src='./Portfolio/Img/Cissp.png' alt='CISSP Certificate'>
-          <figcaption class="cert-caption">This's CISSP Certificate From SkillUp.</figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="" class="cert-glass-card">
-        <figure>
-          <img class="cert-img" src='./Portfolio/Img/Harvard.jpeg' alt='CS50x Harvard'>
-          <figcaption class="cert-caption">This is cs50x vertificate from the harvard university.</figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="" class="cert-glass-card">
-        <figure>
-          <img class="cert-img" src='./Portfolio/Img/datasecience.png' alt='Data Science Certificate'>
-          <figcaption class="cert-caption">This's Data Science Certificate.</figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="" class="cert-glass-card">
-        <figure>
-          <img class="cert-img" src='./Portfolio/Img/genius.png' alt='EC network specialist'>
-          <figcaption class="cert-caption">This's EC network specialist from EnGenius.</figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="" class="cert-glass-card">
-        <figure>
-          <img class="cert-img" src='./Portfolio/Img/networking.png' alt='Networking Certificate'>
-          <figcaption class="cert-caption">This's Networking Certificate From Cisco Networking Academy.</figcaption>
-        </figure>
-      </a>
-    </li>
-      <li>
-      <a href="" class="cert-glass-card">
-        <figure>
-          <img class="cert-img" src='./Portfolio/Img/cyberthreat.jpg' alt='Cyber Threat Certificate'>
-          <figcaption class="cert-caption">This is cyber threat intelligence from arcX.</figcaption>
-        </figure>
-      </a>
-    </li>
-  </ul>
-</div>
-<!-- Certification Section end -->
-
-
-
-
-</main>
-
-<!-- footer start -->
-<footer  class="footer-container">
-  <div class="row">
-    <div class="col-12 col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-stretch">
-      <p class="footer-title">SOCIAL MEDIA</p>
-      <div class="row">
-        <p class="footer-a-text">Follow My Social Media</p>
-        <div class="social-media-container">
-          <div class="mt-3 d-flex align-items-center justify-content-center">
-             <!-- <a href="https://www.facebook.com/echtit1" class="address">
-                <img src="./Img/facebook.svg" alt="facebook" style="width: 30px;height: 30px;"/>
-            </a> -->
-            <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-              <a href="https://www.facebook.com/echtit1">
-                <img src="./Portfolio/Img/facebook.svg" alt="facebook" class="personal-logo text-center"/>
-            </a>
-            </div>
-            <!-- <a href="https://www.youtube.com/@ThuReinOoTech" class="youtube">
-                <img src="./Img/youtube.svg" alt="youtube" style="width: 40px;height: 40px;"/>
-            </a> -->
-            <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-              <a href="https://www.youtube.com/@ThuReinOoTech">
-                <img src="./Portfolio/Img/youtube.svg" alt="youtube" class="personal-logo text-center"/>
-              </a>
-            </div>
-            <!-- <a href="https://www.linkedin.com/in/thu-rein-oo-088307248/" class="linkin">
-                <img src="./Img/linkedin.svg" alt="linkin" style="width: 40px;height: 40px;"/>
-            </a> -->
-            <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-              <a href="https://www.linkedin.com/in/thu-rein-oo-088307248/">
-                <img src="./Portfolio/Img/linkedin.svg" alt="youtube" class="personal-logo text-center"/>
-              </a>
-            </div>
-            <!-- <a href="https://www.instagram.com/oothurein14/" class="igs">
-              <img src="./Img/instagram.svg" alt="linkin" style="width: 40px;height: 40px;"/>
-          </a> -->
-          <!-- <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-            <a href="https://www.theforage.com/profile/RgpQSw7JnwMeEjJkK">
-              <img src="./Portfolio/Img/forage-removebg-preview.png" alt="youtube" class="personal-logo text-center" style="background-color: white; opacity:200%;"/>
-            </a>
-          </div> -->
-          <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-            <a href="https://thurein2003.github.io/Echtit/">
-              <img src="./Portfolio/Img/echtit.png" alt="youtube" class="personal-logo text-center"/>
-            </a>
-          </div>
-          <div class="bg-link-color rounded-circle d-flex justify-content-center align-items-center me-2" style="width: 40px; height: 40px;">
-            <a href="https://x.com/echtit183">
-              <img src="./Portfolio/Img/twitter1.svg" alt="youtube" class="personal-logo text-center"/>
-            </a>
-          </div>
-          </div>
-           
-        </div>
-      </div>
-    </div>
-  <div class="col-12 col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-stretch">
-    <p class="footer-title" >CONTACT ME</p><br>
-    <p class="footer-a-text">
-      <a href="thureinstudent18@gmail.com" class="address">
-        <img src="./Portfolio/Img/gmail.svg" alt="facebook" style="width: 30px;height: 30px;"/>
-    </a> thureinstudent18@gmail.com
-    </p>
-  </div>
-    <div class="col-12 col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-stretch">
-      <p class="footer-title" >SERVICES</p><br>
-      <p class="footer-a-text">
-        Own Facebook Page (Ech Tit)
-      </p><br>
-      <p class="footer-a-text">
-        Own Youtube (Thu Rein Oo Tech)
-      </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-12 col-lg-2 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-stretch"></div>
-    <div class="col-lg-8 d-flex align-items-stretch justify-content-center justify-content-lg-center">
-      <p class="copyright">&copy; Copyright <strong><span>ThuReinOo</span></strong>. All Rights Reserved</p>
-    </div>
-    <div class="col-12 col-lg-2 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-stretch"></div>
-  </div>
-</footer>
-<!-- footer end -->
-
-
-<div class="cursor"></div>
+      <img id="certificate-image" alt="" /><a
+        id="certificate-original"
+        class="text-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Open full image ↗</a
+      >
+    </dialog>
   </body>
-  <script src="/Portfolio/main.js"></script>
-  <script src="./Portfolio/cursor.js"></script>
-
 </html>
