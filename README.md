@@ -30,7 +30,16 @@ Open http://localhost:4173. The preview also supports `/Portfolio/` to check the
 
 ## Publishing
 
-The public site is **https://thurein2003.github.io/Portfolio/**. GitHub Pages should use **Deploy from a branch → main → / (root)**. The root `index.html` and `.nojekyll` allow publishing without a build service. Changes pushed to `main` republish automatically.
+The primary public site is **https://thurein2003.github.io/**, served from `thurein2003/thurein2003.github.io`. The original **https://thurein2003.github.io/Portfolio/** remains available from `thurein2003/Portfolio`. Both repositories use GitHub Pages **Deploy from a branch → main → / (root)**. The root `index.html` and `.nojekyll` allow publishing without a build service.
+
+This checkout retains the original fetch repository and has two push URLs on `origin`, so `git push origin main` publishes the same source to both sites. On a fresh clone, configure both push destinations once:
+
+```sh
+git remote set-url --add --push origin https://github.com/thurein2003/Portfolio.git
+git remote set-url --add --push origin https://github.com/thurein2003/thurein2003.github.io.git
+```
+
+The canonical URL and social preview metadata use the shorter root address. Published photos and certificates are served from `assets/images/` so they work at both site locations without overlapping the legacy `/Portfolio/` project route. The originals in `Portfolio/Img/` are retained.
 
 For another static host, run `npm run build` and publish `dist/`. The build copies only the images referenced by the site.
 

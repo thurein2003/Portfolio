@@ -13,13 +13,14 @@ const html = await readFile(path.join(root, "index.html"), "utf8");
 const images = new Set(
   [
     ...html.matchAll(
-      /(?:src|data-certificate)="\.\/(Portfolio\/Img\/[^"<>]+)"/g,
+      /(?:src|data-certificate)="\.\/((?:Portfolio\/Img|assets\/images)\/[^"<>]+)"/g,
     ),
   ].map((match) => match[1]),
 );
 await mkdir(path.join(output, "Portfolio/Img"), { recursive: true });
 for (const image of images)
-  await cp(path.join(root, image), path.join(output, image));
+  if (!image.startsWith("assets/"))
+    await cp(path.join(root, image), path.join(output, image));
 await writeFile(path.join(output, "robots.txt"), "User-agent: *\nAllow: /\n");
 console.log(
   `Built dist/ with ${images.size} original images. No runtime dependencies.`,
