@@ -1894,3 +1894,9 @@ body.dialog-open {
     animation: none !important;
   }
 }
+
+.license-result {
+  margin-top: 8px;
+  color: #bfd0c7;
+  font-size: 11px;
+}

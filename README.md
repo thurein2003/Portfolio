@@ -9,9 +9,8 @@ Certificate images are original files already in the repository or recovered fro
 - CRTA: CyberWarFare Labs achievement `690813f62dc1cc412983e712`.
 - Belkasoft: certificate `7yzweradta`.
 - SkillFront: badge `87372200027181`.
-- CAP: the issuer’s validation form confirmed `11626359` for Thu Rein Oo, issued June 2026 with Merit. The preview is an accurately labeled screenshot of that verification result, not a recreated certificate.
-- CAP’s original certificate image and the NCC Level 5 document remain unavailable because LinkedIn requires sign-in. Replace the CAP record preview and add the NCC image when direct files become available.
-
+- CAP: the original certificate and 90% with Merit grade images were retrieved from the user-provided public LinkedIn post, https://lnkd.in/p/gnk4MVnb. The issuer’s validation form also confirmed credential `11626359` for Thu Rein Oo, issued June 2026.
+- NCC Level 5 is shown as an education qualification. Its original document image is not available in the workspace or through the sign-in-protected LinkedIn profile; a public post or direct image link is needed to add it.
 
 ## Local preview
 
