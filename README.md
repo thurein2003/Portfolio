@@ -1,6 +1,6 @@
 # Thu Rein Oo — personal portfolio
 
-A fast, responsive portfolio with original photography, selected software projects, security writing, community tutorials, and accessible certificate previews. Built with HTML, CSS, and vanilla JavaScript. Fonts are self-hosted.
+A professional cybersecurity portfolio with a personal portrait, technical focus areas, security projects, forensic investigations, community tutorials, and accessible certificate previews. Built with HTML, CSS, and vanilla JavaScript. Fonts are self-hosted.
 
 ## Local preview
 
