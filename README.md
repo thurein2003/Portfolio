@@ -17,6 +17,8 @@ The 12-card gallery supports previous/next buttons, touch swipes, mouse dragging
 
 The robotics section uses the exact robotic hand photo supplied in this conversation, stored as `Portfolio/Img/robotic-hand-prototype.png`. It describes an ongoing interest and includes no robotics repository links, names, or source code.
 
+The recruiter CV is the user-provided `Thu_Rein_Oo_Cybersecurity_Internship_Final.pdf`, preserved unchanged as `assets/docs/Thu-Rein-Oo-CV.pdf`. Prominent Download CV links appear first in the hero actions and in the desktop header. Both download it as `Thu_Rein_Oo_CV.pdf`. Replace that asset to update the CV without changing the public URL.
+
 ## Local preview
 
 Requires Node.js 20 or newer. No dependency installation is needed.

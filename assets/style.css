@@ -302,8 +302,12 @@ summary:focus-visible {
 .hero-actions {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 28px;
+}
+.hero-actions .button > span {
+  line-height: 1;
 }
 .hero-links {
   display: flex;

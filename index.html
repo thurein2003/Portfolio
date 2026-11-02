@@ -90,6 +90,9 @@
       <symbol id="i-arrow" viewBox="0 0 24 24">
         <path d="M5 19 19 5M5 5h14v14" />
       </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
+      </symbol>
       <symbol id="i-mail" viewBox="0 0 24 24">
         <rect x="2" y="4" width="20" height="16" rx="2" />
         <path d="m2 6 10 7L22 6" />
@@ -120,10 +123,14 @@
           <a href="#work">Work</a><a href="#about">About</a
           ><a href="#credentials">Credentials</a><a href="#notes">Writing</a>
         </nav>
-        <a class="button button-small header-contact" href="#contact"
-          >Let’s talk
+        <a
+          class="button button-small header-contact cv-download"
+          href="./assets/docs/Thu-Rein-Oo-CV.pdf"
+          download="Thu_Rein_Oo_CV.pdf"
+          aria-label="Download CV as a PDF"
+          >Download CV
           <svg class="icon" aria-hidden="true">
-            <use href="#i-arrow"></use></svg></a
+            <use href="#i-download"></use></svg></a
         ><button
           class="menu-toggle"
           aria-expanded="false"
@@ -163,7 +170,15 @@
             <span aria-hidden="true">↗</span></a
           >
           <div class="hero-actions">
-            <a class="button" href="#work"
+            <a
+              class="button cv-download"
+              href="./assets/docs/Thu-Rein-Oo-CV.pdf"
+              download="Thu_Rein_Oo_CV.pdf"
+              aria-label="Download CV as a PDF"
+              >Download CV
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-download"></use></svg></a
+            ><a class="button button-outline" href="#work"
               >View projects <span aria-hidden="true">↗</span></a
             ><a class="button button-outline" href="#contact">Get in touch</a>
           </div>
