@@ -10,7 +10,7 @@ Certificate images are original files already in the repository or recovered fro
 - Belkasoft: certificate `7yzweradta`.
 - SkillFront: badge `87372200027181`.
 - CAP: the original certificate and 90% with Merit grade images were retrieved from the user-provided public LinkedIn post, https://lnkd.in/p/gnk4MVnb. The issuer’s validation form also confirmed credential `11626359` for Thu Rein Oo, issued June 2026.
-- NCC Level 5 is shown as an education qualification. Its original document image is not available in the workspace or through the sign-in-protected LinkedIn profile; a public post or direct image link is needed to add it.
+- NCC Level 5: the user-supplied Statement of Results is preserved from the root `image.png` as `Portfolio/Img/ncc-level5-statement-of-results.png`. The document is labeled as a Statement of Results for the Level 5 Diploma in Computing (with Cyber Security), dated 26 July 2024, and shown under education.
 
 ## Local preview
 

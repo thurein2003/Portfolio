@@ -1900,3 +1900,57 @@ body.dialog-open {
   color: #bfd0c7;
   font-size: 11px;
 }
+
+.ncc-result-preview {
+  display: block;
+  width: 68px;
+  height: 96px;
+  flex-shrink: 0;
+  padding: 3px;
+  border: 1px solid #566374;
+  border-radius: 4px;
+  background: #fff;
+}
+.ncc-result-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ncc-result-preview:hover {
+  border-color: #bfd0c7;
+}
+.qualification-information {
+  flex: 1;
+  min-width: 0;
+}
+.qualification-note .ncc-result-link {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 10px;
+}
+.education-result-link {
+  margin-top: 15px;
+  font-size: 10px;
+}
+@media (max-width: 650px) {
+  .qualification-note {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 12px 14px;
+    align-items: start;
+  }
+  .ncc-result-preview {
+    width: 56px;
+    height: 80px;
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+  .qualification-information {
+    grid-column: 2;
+  }
+  .qualification-note .ncc-result-link {
+    grid-column: 2;
+    margin: 0;
+    justify-self: start;
+  }
+}
