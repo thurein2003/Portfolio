@@ -1,6 +1,6 @@
 # Thu Rein Oo — personal portfolio
 
-A professional cybersecurity portfolio with a personal portrait, technical focus areas, security projects, forensic investigations, community tutorials, and accessible certificate previews. Built with HTML, CSS, and vanilla JavaScript. Fonts are self-hosted.
+A personal cybersecurity portfolio inspired by the visual direction of [CSume v4](https://csume-v4.framer.ai/): black surfaces, lime accents, Space Grotesk typography, a terminal-style profile, and alternating project case studies. Content uses Thu Rein Oo’s own photo, projects, background, writing, and training records. Built with HTML, CSS, and vanilla JavaScript. Fonts are self-hosted with their licenses. The decorative network background is drawn once and updated on resize; the page has no loading gate or continuous animation.
 
 ## Local preview
 
@@ -23,7 +23,7 @@ For another static host, run `npm run build` and publish `dist/`. The build copi
 
 - `index.html`: biography, projects, links, writing, education, and certificates.
 - `assets/style.css`: layout, colors, typography, and responsive behavior.
-- `assets/main.js`: mobile navigation, certificate dialog, and email copying.
+- `assets/main.js`: mobile navigation, active section links, certificate dialog, email copying, and the decorative canvas background.
 - `Portfolio/Img/`: original photos and certificate images, retained from the previous site.
 
 The content uses the previous portfolio, verified public GitHub repository descriptions, and public LinkedIn writing. Employment details hidden behind LinkedIn sign-in are not inferred. Course completions are labeled separately from professional certification.

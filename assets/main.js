@@ -23,7 +23,7 @@ document.addEventListener("keydown", (event) => {
 document.addEventListener("click", (event) => {
   if (!event.target.closest(".site-header")) closeMenu();
 });
-window.matchMedia("(min-width: 601px)").addEventListener("change", (event) => {
+window.matchMedia("(min-width: 651px)").addEventListener("change", (event) => {
   if (event.matches) closeMenu();
 });
 
@@ -79,3 +79,72 @@ copyButton.addEventListener("click", async () => {
   }
 });
 document.querySelector("#year").textContent = new Date().getFullYear();
+
+// Keep the navigation tied to the section currently being read.
+const sections = [...document.querySelectorAll("main section[id]")];
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    const visible = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    document.querySelectorAll(".desktop-nav a").forEach((link) => {
+      if (link.hash === "#" + visible.target.id)
+        link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+  },
+  { rootMargin: "-10% 0px -65% 0px", threshold: 0 },
+);
+sections.forEach((section) => sectionObserver.observe(section));
+
+// A static, decorative network follows the reference's technical visual language.
+// Redraw only on resize: no continuous motion, timers, or animation workload.
+const network = document.querySelector(".hero-network");
+const hero = document.querySelector(".hero");
+function drawNetwork() {
+  const ctx = network.getContext("2d");
+  if (!ctx) return;
+  const width = hero.clientWidth;
+  const height = hero.clientHeight;
+  const ratio = Math.min(window.devicePixelRatio || 1, 2);
+  network.width = width * ratio;
+  network.height = height * ratio;
+  ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+  ctx.clearRect(0, 0, width, height);
+  let seed = 101;
+  const random = () => {
+    seed = (seed * 16807) % 2147483647;
+    return (seed - 1) / 2147483646;
+  };
+  const points = Array.from({ length: width < 650 ? 27 : 52 }, () => ({
+    x: random() * width,
+    y: random() * height,
+  }));
+  ctx.lineWidth = 0.6;
+  points.forEach((point, i) => {
+    points.slice(i + 1).forEach((other) => {
+      const distance = Math.hypot(point.x - other.x, point.y - other.y);
+      if (distance < 155) {
+        ctx.strokeStyle = `rgba(143,190,41,${(1 - distance / 155) * 0.18})`;
+        ctx.beginPath();
+        ctx.moveTo(point.x, point.y);
+        ctx.lineTo(other.x, other.y);
+        ctx.stroke();
+      }
+    });
+    ctx.fillStyle = "rgba(25,207,144,.42)";
+    ctx.beginPath();
+    ctx.arc(point.x, point.y, 1.2, 0, Math.PI * 2);
+    ctx.fill();
+  });
+  ctx.font = "8px monospace";
+  for (let x = 10; x < width; x += 83) {
+    const offset = random() * height;
+    for (let i = 0; i < 9; i++) {
+      ctx.fillStyle = `rgba(164,211,39,${0.03 + random() * 0.08})`;
+      ctx.fillText(random() > 0.5 ? "1" : "0", x, (offset + i * 13) % height);
+    }
+  }
+}
+new ResizeObserver(drawNetwork).observe(hero);
