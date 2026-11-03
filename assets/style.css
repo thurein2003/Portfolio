@@ -788,6 +788,7 @@ summary:focus-visible {
 .contact-socials {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 25px;
   margin-top: 29px;
 }
