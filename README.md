@@ -20,6 +20,8 @@ The robotics section uses the exact robotic hand photo supplied in this conversa
 
 The recruiter CV is the user-provided `Thu_Rein_Oo_Cybersecurity_Internship_Final.pdf`, preserved unchanged as `assets/docs/Thu-Rein-Oo-CV.pdf`. Prominent Download CV links appear first in the hero actions and in the desktop header. Both download it as `Thu_Rein_Oo_CV.pdf`. Replace that asset to update the CV without changing the public URL.
 
+The Contributions section contains two user-identified Cyber Burma research contributions. The AYA Bank breach summary follows the organization's [LinkedIn announcement](https://www.linkedin.com/posts/cyberburma_op-ir-report-activity-7505314413680353280-TZ9U). The online gambling summary is an English paraphrase of the complete Burmese [Facebook post](https://www.facebook.com/share/p/1DTPNqSRE3/). These organization posts provide the project context; the user supplied their participation.
+
 ## Local preview
 
 Requires Node.js 20 or newer. No dependency installation is needed.
