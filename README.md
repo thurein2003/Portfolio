@@ -2,10 +2,11 @@
 
 A minimal dark cybersecurity portfolio featuring Thu Rein Oo’s portrait, selected projects, a current robotics interest, technical writing, education, and an animated credential gallery. Built with HTML, CSS, and vanilla JavaScript. Fonts are self-hosted with their licenses.
 
-The latest credential names, issuers, issue dates, and IDs come from the user’s supplied LinkedIn list. Dates omitted from that list remain omitted. NCC Levels 4 and 5 are education qualifications, separate from the ten certifications.
+The latest credential names, issuers, issue dates, and IDs come from the user’s supplied LinkedIn list and certificate images. Dates omitted from that list remain omitted. NCC Levels 4 and 5 are education qualifications, separate from the eleven certifications.
 
 Certificate images are original files already in the repository or recovered from the issuers’ public records:
 
+- GCDFP: the original user-supplied certificate image is preserved as `assets/images/gcdfp-certificate.jpg`. Greyhawk Certified Digital Forensics Practitioner, issued by Greyhawk Academy on 3 November 2026 after completion on 2 November 2026; 40 training hours; credential `GH-374F94030C651AE5D5CB56795EA9251E48D02E09B3D7AC73`. The verification link is transcribed from the certificate.
 - CRTA: CyberWarFare Labs achievement `690813f62dc1cc412983e712`.
 - Belkasoft: certificate `7yzweradta`.
 - SkillFront: badge `87372200027181`.
@@ -13,7 +14,7 @@ Certificate images are original files already in the repository or recovered fro
 - NCC Level 5: the user-supplied Statement of Results is preserved from the root `image.png` as `Portfolio/Img/ncc-level5-statement-of-results.png`. The document is labeled as a Statement of Results for the Level 5 Diploma in Computing (with Cyber Security), dated 26 July 2024, and shown under education.
 - NCC Level 4: the Diploma in Computing qualification and Twinkle University attribution are restored from the earlier portfolio. It has a text education card; no certificate image, issue date, or grade is invented.
 
-The 12-card gallery supports previous/next buttons, touch swipes, mouse dragging, arrow keys, and a direct credential selector. It does not advance automatically. Only the active slide is interactive or exposed to assistive technology; transitions follow reduced-motion preferences. Original certificate and grade images still open in the full-size preview. With JavaScript disabled, all records remain readable.
+The 13-card gallery supports previous/next buttons, touch swipes, mouse dragging, arrow keys, and a direct credential selector. It does not advance automatically. Only the active slide is interactive or exposed to assistive technology; transitions follow reduced-motion preferences. Original certificate and grade images still open in the full-size preview. With JavaScript disabled, all records remain readable.
 
 The robotics section uses the exact robotic hand photo supplied in this conversation, stored as `Portfolio/Img/robotic-hand-prototype.png`. It describes an ongoing interest and includes no robotics repository links, names, or source code.
 
@@ -52,4 +53,4 @@ For another static host, run `npm run build` and publish `dist/`. The build copi
 - `assets/main.js`: mobile navigation, manual credential gallery, active section links, accessible certificate previews, and email copying.
 - `Portfolio/Img/`: original photos and certificate images, retained from the previous site.
 
-Project descriptions use the public repositories and the previous portfolio. Employment details hidden behind LinkedIn sign-in are not inferred. The gallery contains the ten certifications provided by the user and the two NCC education qualifications.
+Project descriptions use the public repositories and the previous portfolio. Employment details hidden behind LinkedIn sign-in are not inferred. The gallery contains the eleven certifications provided by the user and the two NCC education qualifications.
