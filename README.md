@@ -6,7 +6,7 @@ The latest credential names, issuers, issue dates, and IDs come from the user’
 
 Certificate images are original files already in the repository or recovered from the issuers’ public records:
 
-- GCDFP: the original user-supplied certificate image is preserved as `assets/images/gcdfp-certificate.jpg`. Greyhawk Certified Digital Forensics Practitioner, issued by Greyhawk Academy on 3 November 2026 after completion on 2 November 2026; 40 training hours; credential `GH-374F94030C651AE5D5CB56795EA9251E48D02E09B3D7AC73`. The verification link is transcribed from the certificate.
+- GCDFP: the original user-supplied certificate image is preserved as `assets/images/gcdfp-certificate.jpg`. Greyhawk Certified Digital Forensics Practitioner, issued by Greyhawk Academy on 3 November 2026 after completion on 2 November 2026; 40 training hours; credential `GH-374F94030C651AE5D5CB56795EA9251E48D02E09B3D7AC73`. The user confirmed the [issuer verification URL](https://greyhawkforensics.asia/academy/verify/GH-374F94030C651AE5D5CB56795EA9251E48D02E09B3D7AC73) and supplied the [LinkedIn post](https://lnkd.in/p/gZz9hPsb); both are linked from the certificate card.
 - CRTA: CyberWarFare Labs achievement `690813f62dc1cc412983e712`.
 - Belkasoft: certificate `7yzweradta`.
 - SkillFront: badge `87372200027181`.
