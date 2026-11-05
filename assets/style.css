@@ -569,6 +569,25 @@ summary:focus-visible {
   padding-block: 27px;
   border-block: 1px solid var(--line);
 }
+.experience-image {
+  width: 100%;
+  aspect-ratio: 8 / 5;
+  padding: 0;
+  margin-bottom: 24px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg);
+  cursor: zoom-in;
+}
+.experience-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.experience-image:hover {
+  border-color: #74818c;
+}
 .experience-card .eyebrow {
   font-size: 8px;
   letter-spacing: 1px;
