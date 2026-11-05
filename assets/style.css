@@ -557,6 +557,65 @@ summary:focus-visible {
 .notes-section {
   padding-top: 70px;
 }
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+}
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-block: 27px;
+  border-block: 1px solid var(--line);
+}
+.experience-card .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.experience-card h3 {
+  font-size: 25px;
+}
+.experience-summary {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+.experience-details {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 16px 32px;
+  margin: 24px 0;
+}
+.experience-details dt {
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.experience-details dd {
+  margin: 0;
+  color: var(--accent);
+  font-size: 12px;
+}
+.experience-card .text-link {
+  margin-top: auto;
+}
+@media (max-width: 650px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .experience-card + .experience-card {
+    border-top: 0;
+  }
+  .experience-card h3 {
+    font-size: 23px;
+  }
+  .experience-summary {
+    font-size: 12px;
+  }
+}
 .contribution-list {
   border-top: 1px solid var(--line);
 }
